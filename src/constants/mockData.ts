@@ -5,4 +5,7 @@ export const DUMMY_PAGES: PageData[] = [
   { id: '2', name: 'Page 2' },
   { id: '3', name: 'Page 3' },
   { id: '4', name: 'Page 4' },
+  { id: '5', name: 'Page 5' },
+  { id: '6', name: 'Page 6' },
 ];
+

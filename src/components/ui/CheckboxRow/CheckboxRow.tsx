@@ -8,11 +8,17 @@ export const CheckboxRow: React.FC<CheckboxRowProps> = ({ label, checked, onChan
     <div className="checkbox-row" onClick={onChange}>
       <span className="checkbox-row-label">{label}</span>
       <div className={checkboxClass}>
-        {checked && (
-          <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 5L4.5 8.5L13 1" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        )}
+        <svg 
+          className="checkmark-icon" 
+          width="17" 
+          height="12" 
+          viewBox="0 0 17 12" 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ overflow: 'visible' }}
+        >
+          <path d="M1 6L6 11L16 1" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
       </div>
     </div>
   );
